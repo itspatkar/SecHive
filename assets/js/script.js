@@ -2,13 +2,13 @@
 let selectedTags = new Set(); // Track selected tags
 let tagsJSON = {}; // Store Tags JSON
 let dataJSON = []; // Store Lists JSON
-let typeRed = []; // Red Colored
+let catRed = []; // Red Colored
 
 // Load JSON files
 document.addEventListener("DOMContentLoaded", () => {
     loadJSON('assets/data/tags.json', (data) => {
         tagsJSON = data;
-        typeRed = tagsJSON['typeRed'];
+        catRed = tagsJSON['catRed'];
         generateFilter();
     });
 
@@ -63,27 +63,27 @@ function generateList() {
         let filtersWrap = document.createElement('div');
         filtersWrap.classList.add('d-flex', 'flex-wrap');
 
-        if (Array.isArray(item.category)) {
-            item.category.forEach(function(itemCategory) {
-                let category = document.createElement('span');
-                category.classList.add('alert', 'alert-primary');
-                category.setAttribute('data-tag', itemCategory);
-                category.textContent = capitalize(itemCategory);
-                filtersWrap.appendChild(category);
+        if (Array.isArray(item.technique)) {
+            item.technique.forEach(function(itemTechnique) {
+                let technique = document.createElement('span');
+                technique.classList.add('alert', 'alert-primary');
+                technique.setAttribute('data-tag', itemTechnique);
+                technique.textContent = capitalize(itemTechnique);
+                filtersWrap.appendChild(technique);
             });
         }
 
-        if (Array.isArray(item.type)) {
-            item.type.forEach(function(itemType) {
-                let type = document.createElement('span');
-                if (typeRed.includes(itemType)) {
-                    type.classList.add('alert', 'alert-danger');
+        if (Array.isArray(item.category)) {
+            item.category.forEach(function(itemcategory) {
+                let category = document.createElement('span');
+                if (catRed.includes(itemcategory)) {
+                    category.classList.add('alert', 'alert-danger');
                 } else {
-                    type.classList.add('alert', 'alert-success');
+                    category.classList.add('alert', 'alert-success');
                 }
-                type.setAttribute('data-tag', itemType);
-                type.textContent = capitalize(itemType);
-                filtersWrap.appendChild(type);
+                category.setAttribute('data-tag', itemcategory);
+                category.textContent = capitalize(itemcategory);
+                filtersWrap.appendChild(category);
             });
         }
 
@@ -113,6 +113,32 @@ function generateFilter() {
     const filterList = document.getElementById('filters');
     filterList.innerHTML = '';
 
+    // Techniques
+    let technique = document.createElement('div');
+    technique.classList.add('filter-item');
+
+    let techniqueTitle = document.createElement('h6');
+    techniqueTitle.textContent = "Techniques";
+
+    let techniqueBtn = document.createElement('div');
+
+    tagsJSON['technique'].forEach(item => {
+        let btn = document.createElement('button');
+        btn.setAttribute('type', 'button');
+        btn.classList.add('btn', 'btn-primary', 'btn-sm');
+        btn.setAttribute('data-tag', item);
+        btn.textContent = capitalize(item);
+
+        btn.addEventListener('click', function () {
+            toggleTagFilter(btn, item);
+        });
+
+        techniqueBtn.appendChild(btn);
+    });
+
+    technique.appendChild(techniqueTitle);
+    technique.appendChild(techniqueBtn);
+
     // Categories
     let category = document.createElement('div');
     category.classList.add('filter-item');
@@ -125,7 +151,11 @@ function generateFilter() {
     tagsJSON['category'].forEach(item => {
         let btn = document.createElement('button');
         btn.setAttribute('type', 'button');
-        btn.classList.add('btn', 'btn-primary', 'btn-sm');
+        if (catRed.includes(item)) {
+            btn.classList.add('btn', 'btn-danger', 'btn-sm');
+        } else {
+            btn.classList.add('btn', 'btn-success', 'btn-sm');
+        }
         btn.setAttribute('data-tag', item);
         btn.textContent = capitalize(item);
 
@@ -138,36 +168,6 @@ function generateFilter() {
 
     category.appendChild(categoryTitle);
     category.appendChild(categoryBtn);
-
-    // Types
-    let type = document.createElement('div');
-    type.classList.add('filter-item');
-
-    let typeTitle = document.createElement('h6');
-    typeTitle.textContent = "Types";
-
-    let typeBtn = document.createElement('div');
-
-    tagsJSON['type'].forEach(item => {
-        let btn = document.createElement('button');
-        btn.setAttribute('type', 'button');
-        if (typeRed.includes(item)) {
-            btn.classList.add('btn', 'btn-danger', 'btn-sm');
-        } else {
-            btn.classList.add('btn', 'btn-success', 'btn-sm');
-        }
-        btn.setAttribute('data-tag', item);
-        btn.textContent = capitalize(item);
-
-        btn.addEventListener('click', function () {
-            toggleTagFilter(btn, item);
-        });
-
-        typeBtn.appendChild(btn);
-    });
-
-    type.appendChild(typeTitle);
-    type.appendChild(typeBtn);
 
     // Targets
     let target = document.createElement('div');
@@ -208,8 +208,8 @@ function generateFilter() {
     resetBtn.appendChild(btn);
 
     // Append filters to filterList
+    filterList.appendChild(technique);
     filterList.appendChild(category);
-    filterList.appendChild(type);
     filterList.appendChild(target);
     filterList.appendChild(resetBtn);
 }
@@ -303,6 +303,7 @@ function toggleTagFilter(button, tag) {
     if (tag === 'reset') {
         selectedTags.clear();
         document.querySelectorAll('button[data-tag]').forEach(btn => btn.classList.remove('active'));
+        document.getElementById("search").value = "";
     } else {
         if (selectedTags.has(tag)) {
             selectedTags.delete(tag);

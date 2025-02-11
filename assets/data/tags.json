@@ -1,29 +1,30 @@
 {
-    "category": [
+    "technique": [
         "digital_forensics",
         "enumeration",
+        "fingerprinting",
         "footprinting",
         "password",
         "pentesting",
         "privilege_escalation",
         "reconnaissance",
-        "social_engineering",
-        "sniffing"
+        "sniffing",
+        "social_engineering"
     ],
-    "type": [
+    "category": [
         "active",
         "exploit",
-        "fingerprinting",
+        "hashing",
         "passive",
         "OSINT",
         "scanner",
-        "sniffer",
         "web_crawler"
     ],
     "target": [
         "android",
         "database",
-        "framework_toolkit",
+        "human",
+        "IoT",
         "linux",
         "mac",
         "metadata",
@@ -31,7 +32,7 @@
         "web",
         "windows"
     ],
-    "typeRed": [
+    "catRed": [
         "active",
         "exploit"
     ]
