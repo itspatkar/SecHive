@@ -35,6 +35,11 @@ function capitalize(phrase) {
         .join(" ");
 }
 
+// Clean URL
+function cleanURL(url) {
+    return url.replace(/^https?:\/\//, '').replace(/\/+$/, '');
+}
+
 // Generate list
 function generateList() {
     const dataList = document.getElementById('dataList');
@@ -58,7 +63,7 @@ function generateList() {
         let source = document.createElement('a');
         source.href = item.url;
         source.target = "_blank";
-        source.textContent = item.url;
+        source.textContent = cleanURL(item.url);
         sourceWrap.appendChild(source);
 
         let filtersWrap = document.createElement('div');

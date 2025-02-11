@@ -9,15 +9,19 @@
         "privilege_escalation",
         "reconnaissance",
         "sniffing",
-        "social_engineering"
+        "social_engineering",
+        "SQL_injection"
     ],
     "category": [
         "active",
         "exploit",
         "hashing",
+        "network_scanner",
         "OSINT",
         "passive",
-        "search_engine"
+        "search_engine",
+        "shell_generator",
+        "vulnerability_scanner"
     ],
     "target": [
         "android",
@@ -33,6 +37,8 @@
     ],
     "catRed": [
         "active",
-        "exploit"
+        "exploit",
+        "shell_generator",
+        "vulnerability_scanner"
     ]
 }
