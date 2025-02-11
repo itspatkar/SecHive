@@ -1,15 +1,14 @@
 [
     {
         "name": "Angry IP Scanner",
-        "url": "https://angryip.org",
+        "url": "angryip.org",
         "source": "https://github.com/angryip/ipscan",
         "description": "Angry IP Scanner (or simply ipscan) is an open-source, cross-platform network scanner that scans IP addresses, IP ranges, and ports. It is used for discovering devices on a network and gathering host information.",
         "technique": [
             "reconnaissance"
         ],
         "category": [
-            "active",
-            "scanner"
+            "active"
         ],
         "target": [
             "network"
@@ -17,7 +16,7 @@
     },
     {
         "name": "BillCipher",
-        "url": "https://githacktools.blogspot.com",
+        "url": "githacktools.blogspot.com",
         "source": "https://github.com/bahatiphill/BillCipher",
         "description": "Information gathering tool for websites and IP addresses. It retrieves data such as DNS records, WHOIS details, GeoIP, subnet information, port scanning results, page links, zone transfers, HTTP headers, host discovery, IP location, shared DNS records, robots.txt, reverse IP lookup, email discovery, subdomains, admin login detection, Cloudflare bypass techniques, website copying, and host details.",
         "technique": [
@@ -28,8 +27,7 @@
         ],
         "category": [
             "active",
-            "OSINT",
-            "web_crawler"
+            "OSINT"
         ],
         "target": [
             "metadata",
@@ -39,7 +37,7 @@
     },
     {
         "name": "Burp Suite",
-        "url": "https://portswigger.net",
+        "url": "portswigger.net",
         "source": "https://github.com/PortSwigger",
         "description": "Burp Suite is a Java-based framework for web application penetration testing, allowing interception and manipulation of HTTP/HTTPS traffic between a browser and server.",
         "technique": [
@@ -55,7 +53,7 @@
     },
     {
         "name": "Censys",
-        "url": "https://search.censys.io",
+        "url": "search.censys.io",
         "source": "https://github.com/censys/censys-python",
         "description": "Censys is a cybersecurity tool and search engine that scans the internet to collect and analyze publicly available data about hosts, networks, and devices. It provides insights into open ports, services, SSL/TLS certificates, web servers, IoT devices, cloud services, domains, subdomains, hosts, infrastructure, and the technologies used by a website.",
         "technique": [
@@ -73,7 +71,7 @@
     },
     {
         "name": "Dig",
-        "url": "https://www.isc.org",
+        "url": "www.isc.org",
         "source": "https://www.isc.org/bind/",
         "description": "Domain Information Groper is a network administration tool used for querying the Domain Name System (DNS).",
         "technique": [
@@ -88,7 +86,7 @@
     },
     {
         "name": "DNSDumpster.com",
-        "url": "https://dnsdumpster.com",
+        "url": "dnsdumpster.com",
         "source": "https://dnsdumpster.com/",
         "description": "A free online DNS reconnaissance and research tool that helps gather information about a domain\u2019s infrastructure. It is used for network reconnaissance, including subdomain enumeration, DNS records lookup, IP and host mapping, reverse DNS lookup, geolocation, and WHOIS data.",
         "technique": [
@@ -104,7 +102,7 @@
     },
     {
         "name": "DNSRecon",
-        "url": "https://github.com/darkoperator/dnsrecon",
+        "url": "github.com/darkoperator/dnsrecon",
         "source": "https://github.com/darkoperator/dnsrecon",
         "description": "DNSRecon is a powerful DNS enumeration tool, supporting zone transfer checks, general record enumeration (MX, SOA, NS, A, AAAA, SPF, TXT), SRV record discovery, TLD expansion, and wildcard resolution detection. It can brute-force subdomains, perform PTR lookups for IP ranges, and check DNS server caches for A, AAAA, and CNAME records.",
         "technique": [
@@ -120,7 +118,7 @@
     },
     {
         "name": "ExifTool",
-        "url": "https://exiftool.org",
+        "url": "exiftool.org",
         "source": "https://github.com/exiftool/exiftool",
         "description": "ExifTool is a powerful command-line tool and library used for reading, writing, and editing metadata in files, especially images, videos, and documents.",
         "technique": [
@@ -136,7 +134,7 @@
     },
     {
         "name": "Fierce",
-        "url": "https://github.com/mschwager/fierce",
+        "url": "github.com/mschwager/fierce",
         "source": "https://github.com/mschwager/fierce",
         "description": "A DNS reconnaissance tool for locating non-contiguous IP space.",
         "technique": [
@@ -151,7 +149,7 @@
     },
     {
         "name": "FOCA",
-        "url": "https://www.elevenpaths.com",
+        "url": "www.elevenpaths.com",
         "source": "https://github.com/ElevenPaths/FOCA",
         "description": "FOCA (Fingerprinting Organizations with Collected Archives) is a tool primarily used to extract metadata and hidden information from scanned documents. It can analyze documents found on web pages by downloading and processing them.",
         "technique": [
@@ -160,8 +158,7 @@
             "footprinting"
         ],
         "category": [
-            "passive",
-            "scanner"
+            "passive"
         ],
         "target": [
             "metadata",
@@ -170,7 +167,7 @@
     },
     {
         "name": "Hoaxshell",
-        "url": "https://github.com/t3l3machus/hoaxshell",
+        "url": "github.com/t3l3machus/hoaxshell",
         "source": "https://github.com/t3l3machus/hoaxshell",
         "description": "A Windows reverse shell payload generator and handler that abuses the http(s) protocol to establish a beacon-like reverse shell.",
         "technique": [
@@ -187,7 +184,7 @@
     },
     {
         "name": "Host",
-        "url": "https://www.isc.org",
+        "url": "www.isc.org",
         "source": "https://www.isc.org/bind/",
         "description": "The host command is a simple DNS lookup utility used to find IP addresses, domain names, mail servers, and other DNS-related information.",
         "technique": [
@@ -203,7 +200,7 @@
     },
     {
         "name": "Hping3",
-        "url": "https://www.hping.org",
+        "url": "www.hping.org",
         "source": "https://github.com/antirez/hping",
         "description": "Hping3 is a command-line network security tool used for packet crafting, scanning, and network testing. It is similar to ping but offers more advanced features, allowing users to send custom TCP, UDP, ICMP, and raw IP packets.",
         "technique": [
@@ -211,8 +208,7 @@
             "pentesting"
         ],
         "category": [
-            "active",
-            "scanner"
+            "active"
         ],
         "target": [
             "network"
@@ -220,7 +216,7 @@
     },
     {
         "name": "Impacket",
-        "url": "https://www.coresecurity.com",
+        "url": "www.coresecurity.com",
         "source": "https://github.com/fortra/impacket",
         "description": "Impacket is a collection of Python classes for working with network protocols.",
         "technique": [
@@ -235,7 +231,7 @@
     },
     {
         "name": "John the Ripper",
-        "url": "https://www.openwall.com/john",
+        "url": "www.openwall.com/john",
         "source": "https://github.com/openwall/john",
         "description": "John the Ripper Jumbo is an advanced offline password cracker that supports hundreds of hash and cipher types. Its primary purpose is to identify weak Unix passwords. It is an open-source tool for password security auditing and recovery.",
         "technique": [
@@ -253,7 +249,7 @@
     },
     {
         "name": "Maltego",
-        "url": "https://www.maltego.com",
+        "url": "www.maltego.com",
         "source": "https://www.maltego.com/",
         "description": "Maltego is a graph-based intelligence and forensics tool used for OSINT gathering, link analysis, and data visualization. It discovers relationships between entities such as domains, IP addresses, emails, social media accounts, infrastructure, and threat actors.",
         "technique": [
@@ -263,8 +259,7 @@
         ],
         "category": [
             "active",
-            "OSINT",
-            "web_crawler"
+            "OSINT"
         ],
         "target": [
             "human",
@@ -273,7 +268,7 @@
     },
     {
         "name": "Metasploit",
-        "url": "https://www.metasploit.com",
+        "url": "www.metasploit.com",
         "source": "https://github.com/rapid7/metasploit-framework",
         "description": "An open-source project that provides the infrastructure, content, and tools to perform penetration tests and extensive security auditing.",
         "technique": [
@@ -291,7 +286,7 @@
     },
     {
         "name": "Mimikatz",
-        "url": "https://parrotsec.org",
+        "url": "parrotsec.org",
         "source": "https://gitlab.com/parrotsec",
         "description": "Extract plaintext passwords, hashes, PINs, and Kerberos tickets from memory, as well as perform pass-the-hash, pass-the-ticket, and create Golden Tickets.",
         "technique": [
@@ -306,7 +301,7 @@
     },
     {
         "name": "MXToolBox",
-        "url": "https://mxtoolbox.com",
+        "url": "mxtoolbox.com",
         "source": "https://mxtoolbox.com/",
         "description": "MXToolbox is a free online toolset for email, DNS, and network diagnostics. It is widely used by IT professionals, system administrators, and security experts to monitor and troubleshoot email servers, DNS records, and blacklists.",
         "technique": [
@@ -324,7 +319,7 @@
     },
     {
         "name": "Netcraft Research Tools",
-        "url": "https://www.netcraft.com/tools",
+        "url": "www.netcraft.com/tools",
         "source": "https://www.netcraft.com/tools/",
         "description": "Tools to discover the infrastructure and technologies a site is using, identify the most popular websites, and enhance internet safety.",
         "technique": [
@@ -340,7 +335,7 @@
     },
     {
         "name": "NMap",
-        "url": "https://nmap.org",
+        "url": "nmap.org",
         "source": "https://github.com/nmap/",
         "description": "Network Mapper scans networks to identify devices, open ports, services, and detect OS and service versions, automating network scanning.",
         "technique": [
@@ -356,7 +351,7 @@
     },
     {
         "name": "NAPALM FTP Indexer",
-        "url": "https://www.searchftps.net",
+        "url": "www.searchftps.net",
         "source": "https://www.searchftps.net/",
         "description": "NAPALM FTP Indexer is an advanced FTP search engine that allows users to search and download files from public FTP servers. It maintains a comprehensive database of files from numerous FTP servers, updated regularly by an intelligent FTP crawler.",
         "technique": [
@@ -364,7 +359,8 @@
             "reconnaissance"
         ],
         "category": [
-            "OSINT"
+            "OSINT",
+            "search_engine"
         ],
         "target": [
             "network",
@@ -373,7 +369,7 @@
     },
     {
         "name": "Nslookup",
-        "url": "https://www.isc.org",
+        "url": "www.isc.org",
         "source": "https://www.isc.org/bind/",
         "description": "The nslookup (Name Server Lookup) command is a DNS query tool used to find IP addresses, domain names, mail servers, and other DNS records.",
         "technique": [
@@ -389,7 +385,7 @@
     },
     {
         "name": "OSINT.SH",
-        "url": "https://osint.sh",
+        "url": "osint.sh",
         "source": "https://github.com/secgron/osint.sh",
         "description": "All in one Information Gathering Tools - Public Buckets Search, Subdomain Finder, DNS History, Reverse IP Lookup, Technology Lookup, Certificate Search, DNS Lookup, Reverse Google Analytics/AdSense, Whois History, Reverse Whois, OCR Text Extractor, and MD5 Hash Guessing.",
         "technique": [
@@ -400,8 +396,7 @@
         "category": [
             "active",
             "hashing",
-            "OSINT",
-            "scanner"
+            "OSINT"
         ],
         "target": [
             "network",
@@ -410,7 +405,7 @@
     },
     {
         "name": "Pdfinfo",
-        "url": "https://www.xpdfreader.com",
+        "url": "www.xpdfreader.com",
         "source": "https://www.xpdfreader.com/download.html",
         "description": "Pdfinfo is a command-line tool used to extract metadata and document properties from PDF files. It is part of the Poppler-utils package.",
         "technique": [
@@ -426,7 +421,7 @@
     },
     {
         "name": "PEASS-NG",
-        "url": "https://book.hacktricks.xyz",
+        "url": "book.hacktricks.xyz",
         "source": "https://github.com/peass-ng/PEASS-ng",
         "description": "Privilege Escalation Awesome Scripts - Next Generation is a post-exploitation toolkit for Windows and Linux, automating privilege escalation discovery by identifying misconfigurations, vulnerable services, and weak permissions.",
         "technique": [
@@ -442,7 +437,7 @@
     },
     {
         "name": "Pentest Tools",
-        "url": "https://pentest-tools.com",
+        "url": "pentest-tools.com",
         "source": "https://pentest-tools.com/",
         "description": "Pentest-Tools.com develops offensive cybersecurity tools and proprietary vulnerability scanning software for penetration testers and other infosec professionals.",
         "technique": [
@@ -451,9 +446,7 @@
             "pentesting"
         ],
         "category": [
-            "active",
-            "scanner",
-            "web_crawler"
+            "active"
         ],
         "target": [
             "network",
@@ -462,7 +455,7 @@
     },
     {
         "name": "Photon",
-        "url": "https://github.com/s0md3v/Photon",
+        "url": "github.com/s0md3v/Photon",
         "source": "https://github.com/s0md3v/Photon",
         "description": "Photon is an OSINT tool used for web scraping and data extraction. It can retrieve archived URLs of the target website from Archive.org.",
         "technique": [
@@ -470,8 +463,7 @@
         ],
         "category": [
             "active",
-            "OSINT",
-            "web_crawler"
+            "OSINT"
         ],
         "target": [
             "web"
@@ -479,7 +471,7 @@
     },
     {
         "name": "ReconDog",
-        "url": "https://github.com/s0md3v/ReconDog",
+        "url": "github.com/s0md3v/ReconDog",
         "source": "https://github.com/s0md3v/ReconDog",
         "description": "Reconnaissance Swiss Army Knife - uses APIs to gather information about a target system, including Censys, NS Lookup, Port Scanning, CMS Detection, WHOIS Lookup, Honeypot Detection, Subdomain Discovery, Reverse IP Lookup, and Technology Fingerprinting.",
         "technique": [
@@ -498,7 +490,7 @@
     },
     {
         "name": "Recon-NG",
-        "url": "https://github.com/lanmaster53/recon-ng",
+        "url": "github.com/lanmaster53/recon-ng",
         "source": "https://github.com/lanmaster53/recon-ng",
         "description": "Recon-ng is a full-featured reconnaissance framework designed for fast and thorough open-source web-based intelligence gathering. It is used for OSINT collection, DNS enumeration, domain and host discovery, WHOIS lookups, port scanning, attack surface mapping, etc.",
         "technique": [
@@ -507,8 +499,7 @@
         ],
         "category": [
             "OSINT",
-            "passive",
-            "web_crawler"
+            "passive"
         ],
         "target": [
             "network",
@@ -517,7 +508,7 @@
     },
     {
         "name": "Responder",
-        "url": "https://github.com/lgandx/Responder",
+        "url": "github.com/lgandx/Responder",
         "source": "https://github.com/lgandx/Responder",
         "description": "Responder is a LLMNR, NBT-NS and MDNS poisoner, with built-in HTTP/SMB/MSSQL/FTP/LDAP rogue authentication server supporting NTLMv1/NTLMv2/LMv2, Extended Security NTLMSSP and Basic HTTP authentication.",
         "technique": [
@@ -533,7 +524,7 @@
     },
     {
         "name": "Reverse Shell generator",
-        "url": "https://revshells.com",
+        "url": "revshells.com",
         "source": "https://github.com/0dayCTF/reverse-shell-generator",
         "description": "Hosted Reverse Shell generator with a ton of functionality.",
         "technique": [
@@ -552,15 +543,14 @@
     },
     {
         "name": "RustScan",
-        "url": "https://rustscan.github.io/RustScan",
+        "url": "rustscan.github.io/RustScan",
         "source": "https://github.com/RustScan/RustScan",
         "description": "A modern port scanner designed for high-speed scanning of open ports on target machines, featuring full scripting engine support. It can automatically pipe results into Nmap or utilize custom scripts for further analysis.",
         "technique": [
             "enumeration"
         ],
         "category": [
-            "active",
-            "scanner"
+            "active"
         ],
         "target": [
             "network"
@@ -568,15 +558,14 @@
     },
     {
         "name": "Scanlogd",
-        "url": "https://www.openwall.com/scanlogd",
+        "url": "www.openwall.com/scanlogd",
         "source": "https://github.com/openwall/scanlogd",
         "description": "Scanlogd is a TCP port scan detection tool that monitors network traffic to detect and log TCP port scans. It helps identify potential reconnaissance activities by attackers who are scanning for open ports on a system.",
         "technique": [
             "reconnaissance"
         ],
         "category": [
-            "passive",
-            "scanner"
+            "passive"
         ],
         "target": [
             "network"
@@ -584,7 +573,7 @@
     },
     {
         "name": "Sherlock",
-        "url": "https://sherlockproject.xyz",
+        "url": "sherlockproject.xyz",
         "source": "https://github.com/sherlock-project/sherlock",
         "description": "Hunt down social media accounts by username across social networks.",
         "technique": [
@@ -602,7 +591,7 @@
     },
     {
         "name": "SHODAN",
-        "url": "https://www.shodan.io",
+        "url": "www.shodan.io",
         "source": "https://www.shodan.io",
         "description": "A search engine designed to detect internet-connected devices and networks with potential vulnerabilities.",
         "technique": [
@@ -611,7 +600,7 @@
         "category": [
             "OSINT",
             "passive",
-            "scanner"
+            "search_engine"
         ],
         "target": [
             "IoT",
@@ -620,7 +609,7 @@
     },
     {
         "name": "Social Searcher",
-        "url": "https://www.social-searcher.com",
+        "url": "www.social-searcher.com",
         "source": "https://www.social-searcher.com/",
         "description": "Social Searcher - Free Social Media Search Engine",
         "technique": [
@@ -636,7 +625,7 @@
     },
     {
         "name": "SQLMap",
-        "url": "https://sqlmap.org",
+        "url": "sqlmap.org",
         "source": "https://github.com/sqlmapproject/sqlmap",
         "description": "sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers.",
         "technique": [
@@ -644,7 +633,6 @@
         ],
         "category": [
             "active",
-            "scanner",
             "exploit"
         ],
         "target": [
@@ -654,7 +642,7 @@
     },
     {
         "name": "Subfinder",
-        "url": "https://projectdiscovery.io",
+        "url": "projectdiscovery.io",
         "source": "https://github.com/projectdiscovery/subfinder",
         "description": "Subfinder is a subdomain discovery tool that returns valid subdomains for websites, using passive online sources.",
         "technique": [
@@ -671,7 +659,7 @@
     },
     {
         "name": "Sublist3r",
-        "url": "https://github.com/aboul3la/Sublist3r",
+        "url": "github.com/aboul3la/Sublist3r",
         "source": "https://github.com/aboul3la/Sublist3r",
         "description": "Sublist3r is a python tool designed to enumerate subdomains of websites using OSINT.",
         "technique": [
@@ -688,7 +676,7 @@
     },
     {
         "name": "SX",
-        "url": "https://github.com/v-byte-cpu/sx",
+        "url": "github.com/v-byte-cpu/sx",
         "source": "https://github.com/v-byte-cpu/sx",
         "description": "SX is a command-line network scanner that performs ARP, TCP, and UDP scans to discover open ports. It utilizes an ARP cache mechanism for efficient scanning and provides JSON output for easy parsing.",
         "technique": [
@@ -703,7 +691,7 @@
     },
     {
         "name": "TCPDump",
-        "url": "https://www.tcpdump.org",
+        "url": "www.tcpdump.org",
         "source": "https://github.com/the-tcpdump-group",
         "description": "TCP dump is packet analyser tool used to capture and analyse packets and network traffic in real-time over network.",
         "technique": [
@@ -718,7 +706,7 @@
     },
     {
         "name": "theHarvester",
-        "url": "https://www.edge-security.com",
+        "url": "www.edge-security.com",
         "source": "https://github.com/laramies/theHarvester",
         "description": "OSINT gathering tool (collects names, emails, IP addresses, subdomains, and URLs using multiple public resources).",
         "technique": [
@@ -734,7 +722,7 @@
     },
     {
         "name": "The Social-Engineer Toolkit (SET)",
-        "url": "https://www.trustedsec.com",
+        "url": "www.trustedsec.com",
         "source": "https://github.com/trustedsec/social-engineer-toolkit",
         "description": "The Social-Engineer Toolkit is an open-source penetration testing framework designed for social engineering.",
         "technique": [
@@ -750,7 +738,7 @@
     },
     {
         "name": "Wireshark",
-        "url": "https://www.wireshark.org",
+        "url": "www.wireshark.org",
         "source": "https://gitlab.com/wireshark/wireshark",
         "description": "Wireshark is a network protocol analyzer that interactively captures and analyzes network traffic.",
         "technique": [
@@ -765,7 +753,7 @@
     },
     {
         "name": "WhatWeb",
-        "url": "https://morningstarsecurity.com",
+        "url": "morningstarsecurity.com",
         "source": "https://github.com/urbanadventurer/WhatWeb",
         "description": "Next generation web scanner. Identify the technology stack that powers a website and explore the Web of Things.",
         "technique": [
@@ -781,7 +769,7 @@
     },
     {
         "name": "Whois",
-        "url": "https://github.com/rfc1036/whois",
+        "url": "github.com/rfc1036/whois",
         "source": "https://github.com/rfc1036/whois",
         "description": "Retrieve WHOIS information or records for a domain.",
         "technique": [

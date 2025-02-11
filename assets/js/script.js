@@ -4,7 +4,7 @@ let tagsJSON = {}; // Store Tags JSON
 let dataJSON = []; // Store Lists JSON
 let catRed = []; // Red Colored
 
-// Load JSON files
+// Event listener for load JSON
 document.addEventListener("DOMContentLoaded", () => {
     loadJSON('assets/data/tags.json', (data) => {
         tagsJSON = data;
@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// Load JSON files
 function loadJSON(url, callback) {
     fetch(url)
         .then(response => response.ok ? response.json() : Promise.reject(`HTTP error! Status: ${response.status}`))
@@ -25,7 +26,7 @@ function loadJSON(url, callback) {
         .catch(error => console.error('Error loading JSON:', error));
 }
 
-// Capitalize sentence/words
+// Capitalize words/sentence
 function capitalize(phrase) {
     return phrase
         .replace(/_/g, ' ')
@@ -214,53 +215,6 @@ function generateFilter() {
     filterList.appendChild(resetBtn);
 }
 
-// Search filter
-// document.getElementById('search').addEventListener('input', function() {
-//     let filter = this.value.trim().toLowerCase();;
-//     let listItem = document.querySelectorAll('.list-item');
-
-//     listItem.forEach(item => {
-//         let title = item.querySelector('.title').textContent.toLowerCase();
-//         item.style.display = title.includes(filter) ? 'block' : 'none';
-//     });
-// });
-
-// Filter list items by tag
-// function filterListByTag(tag) {
-//     let listItems = document.querySelectorAll('.list-item');
-//     listItems.forEach(function(item) {
-//         let tags = item.querySelectorAll('[data-tag]');
-//         let showItem = false;
-//         tags.forEach(function(tagElement) {
-//             if (tagElement.getAttribute('data-tag') === tag) {
-//                 showItem = true;
-//             }
-//         });
-
-//         item.style.display = showItem ? 'block' : 'none';
-//     });
-// }
-
-// Event listener btns
-// document.querySelectorAll('button[data-tag]').forEach(function(button) {
-//     button.addEventListener('click', function() {
-//         let tag = button.getAttribute('data-tag');
-//         if (tag === 'reset') {
-//             let listItems = document.querySelectorAll('.list-item');
-//             listItems.forEach(function(item) {
-//                 item.style.display = 'block';
-//             });
-//         } else {
-//             filterListByTag(tag);
-//         }
-//     });
-// });
-
-// Search filter
-document.getElementById('search').addEventListener('input', function () {
-    filterItems();
-});
-
 // Filter list items based on search and selected tags
 function filterItems() {
     let searchFilter = document.getElementById('search').value.trim().toLowerCase();
@@ -277,28 +231,12 @@ function filterItems() {
     });
 }
 
-// Event listener for filter buttons
-// document.querySelectorAll('button[data-tag]').forEach(button => {
-//     button.addEventListener('click', function () {
-//         let tag = this.getAttribute('data-tag');
+// Event listener for search filter
+document.getElementById('search').addEventListener('input', function () {
+    filterItems();
+});
 
-//         if (tag === 'reset') {
-//             selectedTags.clear();
-//             document.querySelectorAll('button[data-tag]').forEach(btn => btn.classList.remove('active'));
-//         } else {
-//             if (selectedTags.has(tag)) {
-//                 selectedTags.delete(tag);
-//                 this.classList.remove('active');
-//             } else {
-//                 selectedTags.add(tag);
-//                 this.classList.add('active');
-//             }
-//         }
-
-//         filterItems();
-//     });
-// });
-
+// Event listener for filter btns
 function toggleTagFilter(button, tag) {
     if (tag === 'reset') {
         selectedTags.clear();

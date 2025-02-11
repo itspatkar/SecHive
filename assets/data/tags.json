@@ -15,10 +15,9 @@
         "active",
         "exploit",
         "hashing",
-        "passive",
         "OSINT",
-        "scanner",
-        "web_crawler"
+        "passive",
+        "search_engine"
     ],
     "target": [
         "android",
