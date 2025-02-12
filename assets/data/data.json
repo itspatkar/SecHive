@@ -74,6 +74,23 @@
         ]
     },
     {
+        "name": "CmosPwd",
+        "url": "https://www.cgsecurity.org/",
+        "source": "https://www.cgsecurity.org/wiki/CmosPwd",
+        "description": "CmosPwd is an open-source tool used to decrypt, recover, or reset BIOS/CMOS passwords and reset BIOS settings on various computer systems. It can also back up, restore, and erase/kill CMOS.",
+        "technique": [
+            "digital_forensics",
+            "password"
+        ],
+        "category": [
+            "data_extraction",
+            "hashing"
+        ],
+        "target": [
+            "hardware"
+        ]
+    },
+    {
         "name": "Dig",
         "url": "https://www.isc.org/",
         "source": "https://www.isc.org/bind/",
@@ -140,6 +157,28 @@
         ]
     },
     {
+        "name": "Exploit Database",
+        "url": "https://www.exploit-db.com/",
+        "source": "https://gitlab.com/exploit-database/exploitdb",
+        "description": "The Exploit Database is a CVE compliant archive of public exploits and corresponding vulnerable software, developed for use by penetration testers and vulnerability researchers. The Exploit Database is a repository for exploits and proof-of-concepts rather than advisories, making it a valuable resource for those who need actionable data right away.",
+        "technique": [
+            "enumeration",
+            "pentesting",
+            "privilege_escalation"
+        ],
+        "category": [
+            "exploit",
+            "OSINT",
+            "search_engine",
+            "vulnerability_scanner"
+        ],
+        "target": [
+            "database",
+            "metadata",
+            "web"
+        ]
+    },
+    {
         "name": "Fierce",
         "url": "https://github.com/mschwager/fierce",
         "source": "https://github.com/mschwager/fierce",
@@ -166,9 +205,53 @@
             "footprinting"
         ],
         "category": [
+            "data_extraction",
             "passive"
         ],
         "target": [
+            "metadata",
+            "web"
+        ]
+    },
+    {
+        "name": "Gobuster",
+        "url": "https://github.com/OJ/gobuster",
+        "source": "https://github.com/OJ/gobuster",
+        "description": "Gobuster is a tool used to brute-force: URIs (directories and files) in web sites, DNS subdomains (with wildcard support), Virtual Host names on target web servers, Open Amazon S3 buckets, Open Google Cloud buckets, TFTP servers.",
+        "technique": [
+            "enumeration",
+            "footprinting",
+            "pentesting",
+            "reconnaissance"
+        ],
+        "category": [
+            "network_scanner"
+        ],
+        "target": [
+            "metadata",
+            "web"
+        ]
+    },
+    {
+        "name": "Google Hacking Database ",
+        "url": "https://www.exploit-db.com/google-hacking-database",
+        "source": "https://gitlab.com/exploit-database/exploitdb",
+        "description": "The Google Hacking Database (GHDB) is a categorized index of Internet search engine queries designed to uncover interesting, and usually sensitive, information made publicly available on the Internet.",
+        "technique": [
+            "enumeration",
+            "pentesting",
+            "privilege_escalation",
+            "reconnaissance",
+            "social_engineering"
+        ],
+        "category": [
+            "OSINT",
+            "passive",
+            "search_engine",
+            "vulnerability_scanner"
+        ],
+        "target": [
+            "database",
             "metadata",
             "web"
         ]
@@ -240,6 +323,26 @@
         ],
         "target": [
             "windows"
+        ]
+    },
+    {
+        "name": "Internet Archive",
+        "url": "https://archive.org/",
+        "source": "https://archive.org/",
+        "description": "Internet Archive is a non-profit library of millions of free texts, movies, software, music, websites, and more.",
+        "technique": [
+            "digital_forensics",
+            "footprinting",
+            "reconnaissance"
+        ],
+        "category": [
+            "active",
+            "OSINT",
+            "search_engine"
+        ],
+        "target": [
+            "human",
+            "web"
         ]
     },
     {
@@ -392,6 +495,30 @@
         ]
     },
     {
+        "name": "Netcat",
+        "url": "https://nc110.sourceforge.io/",
+        "source": "https://sourceforge.net/projects/nc110/",
+        "description": "The Swiss Army Knife of Networking - Netcat (nc) is a simple Unix utility which reads and writes data across network connections, using TCP or UDP protocol. it can create almost any kind of connection you would need and has several interesting built-in capabilities.",
+        "technique": [
+            "enumeration",
+            "footprinting",
+            "pentesting",
+            "sniffing"
+        ],
+        "category": [
+            "active",
+            "network_scanner",
+            "shell_generator"
+        ],
+        "target": [
+            "IoT",
+            "linux",
+            "mac",
+            "network",
+            "windows"
+        ]
+    },
+    {
         "name": "Nslookup",
         "url": "https://www.isc.org/",
         "source": "https://www.isc.org/bind/",
@@ -437,6 +564,7 @@
             "digital_forensics"
         ],
         "category": [
+            "data_extraction",
             "OSINT",
             "passive"
         ],
@@ -490,10 +618,29 @@
         ],
         "category": [
             "active",
+            "data_extraction",
             "OSINT"
         ],
         "target": [
             "web"
+        ]
+    },
+    {
+        "name": "PhotoRec",
+        "url": "https://www.cgsecurity.org/",
+        "source": "https://www.cgsecurity.org/wiki/PhotoRec",
+        "description": "PhotoRec is an open-source file recovery tool designed to retrieve lost or deleted files from hard drives, memory cards, USB drives, and other storage devices. It is commonly used in digital forensics and data recovery to extract lost evidence or accidentally deleted files. It will work even if the media's file system is severely damaged or reformatted.",
+        "technique": [
+            "digital_forensics"
+        ],
+        "category": [
+            "data_extraction",
+            "OSINT",
+            "passive"
+        ],
+        "target": [
+            "hardware",
+            "metadata"
         ]
     },
     {
@@ -526,8 +673,8 @@
             "reconnaissance"
         ],
         "category": [
-            "OSINT",
             "network_scanner",
+            "OSINT",
             "passive"
         ],
         "target": [
@@ -749,6 +896,23 @@
         ]
     },
     {
+        "name": "TestDisk",
+        "url": "https://www.cgsecurity.org/",
+        "source": "https://www.cgsecurity.org/wiki/TestDisk",
+        "description": "TestDisk is an open-source data recovery software and digital forensics tool designed to recover lost partitions, fix boot issues, and restore deleted files.",
+        "technique": [
+            "digital_forensics"
+        ],
+        "category": [
+            "data_extraction",
+            "OSINT",
+            "passive"
+        ],
+        "target": [
+            "hardware"
+        ]
+    },
+    {
         "name": "theHarvester",
         "url": "https://www.edge-security.com/",
         "source": "https://github.com/laramies/theHarvester",
@@ -784,6 +948,27 @@
         ],
         "target": [
             "human",
+            "web"
+        ]
+    },
+    {
+        "name": "Wayback Machine",
+        "url": "https://web.archive.org/",
+        "source": "https://web.archive.org/",
+        "description": "The Wayback Machine - Internet’s Time Machine (part of Internet Archive) is a web archiving tool that stores historical snapshots of websites. It allows users to view old versions of web pages, even if they have been deleted or modified.",
+        "technique": [
+            "digital_forensics",
+            "footprinting",
+            "reconnaissance",
+            "social_engineering"
+        ],
+        "category": [
+            "OSINT",
+            "passive",
+            "search_engine"
+        ],
+        "target": [
+            "database",
             "web"
         ]
     },

@@ -14,6 +14,7 @@
     ],
     "category": [
         "active",
+        "data_extraction",
         "exploit",
         "hashing",
         "network_scanner",
@@ -26,6 +27,7 @@
     "target": [
         "android",
         "database",
+        "hardware",
         "human",
         "IoT",
         "linux",
@@ -37,6 +39,7 @@
     ],
     "catRed": [
         "active",
+        "data_extraction",
         "exploit",
         "shell_generator",
         "vulnerability_scanner"
