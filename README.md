@@ -1,2 +1,2 @@
-# Cyber Toolbox
-CyberToolbox – A Curated Collection of Cybersecurity &amp; Privacy Tools.
+# Cyber Toolkit
+CyberToolkit – A Curated Collection of Cybersecurity &amp; Privacy Tools.
